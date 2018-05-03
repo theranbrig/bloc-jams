@@ -4,4 +4,8 @@
 
 * Create boilerplate with `create-react-app`
 * Create git repository
-* Add music and immage assets
+* Add music and image assets
+
+## Checkpoint 2 - Routing
+
+* 
