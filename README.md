@@ -6,6 +6,9 @@
 * Create git repository
 * Add music and image assets
 
-## Checkpoint 2 - Routing
+## Checkpoint/Assignment 2 - Routing
 
-* 
+* Add `react-router` to app
+* Create routes for landing, library, and album
+* Create links for landing, library, and album
+* Setup components (imports and exports) for landing, library, and album
