@@ -12,3 +12,14 @@
 * Create routes for landing, library, and album
 * Create links for landing, library, and album
 * Setup components (imports and exports) for landing, library, and album
+
+## Checkpoint 3 - Components: Landing
+
+* Added selling points with titles and descriptions for site landing page
+
+## Checkpoint 4 - Components: Library
+
+* Added data for albums (Using static album data, rather than API JSON for now)
+* Set up library as a class with albums mapped out.
+* Added route for individual albums with URL and passed parameters to Albums component
+* Set up albums as links using `react-router-dom`
