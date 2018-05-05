@@ -19,7 +19,13 @@
 
 ## Checkpoint 4 - Components: Library
 
-* Added data for albums (Using static album data, rather than API JSON for now)
+* Added data for albums (Using static album data, rather than API JSON for now) and set to state
 * Set up library as a class with albums mapped out.
 * Added route for individual albums with URL and passed parameters to Albums component
 * Set up albums as links using `react-router-dom`
+
+## Checkpoint 5 - Components: Album
+
+* Imported album from source data and created album as state
+* Added album information layout in component
+* Mapped song information to table with track, title, and duration
