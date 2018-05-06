@@ -41,3 +41,8 @@
 * Added Play Bar class component and built up player buttons
 * Added previous and next click functions to Album component
 * Added click functions (play/pause, previous, next) to Play Bar component
+
+## Checkpoint 8 - Play Bar: Range Inputs
+
+* Added volume and time slider functionality
+* Formatted display of time for current time and time remaining
