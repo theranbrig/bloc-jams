@@ -35,3 +35,9 @@
 * Created audio component from source data
 * Added play and pause functions with set track function called and assigned to click function
 * Added click function to song component
+
+## Checkpoint 7 - Play Bar: Buttons
+
+* Added Play Bar class component and built up player buttons
+* Added previous and next click functions to Album component
+* Added click functions (play/pause, previous, next) to Play Bar component
