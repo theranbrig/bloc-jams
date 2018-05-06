@@ -29,3 +29,9 @@
 * Imported album from source data and created album as state
 * Added album information layout in component
 * Mapped song information to table with track, title, and duration
+
+## Checkpoint 6 - Audio Playback
+
+* Created audio component from source data
+* Added play and pause functions with set track function called and assigned to click function
+* Added click function to song component
