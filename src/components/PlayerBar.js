@@ -1,47 +1,65 @@
 import React, { Component } from 'react';
+import { Grid, Segment } from "semantic-ui-react";
+
+// Build of player bar for album page to be placed at the bottom of the screen
 
 class PlayerBar extends Component {
   render() {
     return (
-      <section className='player-bar'>
-        <section id='buttons'>
-          <button id='previous' onClick={ this.props.handlePreviousClick }>
-            <span className='ion-skip-backward'></span>
-          </button>
-          <button id='play-pause' onClick={ this.props.handleSongClick }>
-            <span className={ this.props.isPlaying ? 'ion-pause' : 'ion-play' }></span>
-          </button>
-          <button id='next' onClick={ this.props.handleNextClick }>
-            <span className='ion-skip-forward'></span>
-          </button>
-        </section>
-        <section id='time-control'>
-          <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
-           <input 
-             type="range" 
-             className="seek-bar" 
-             value={(this.props.currentTime / this.props.duration) || 0} 
-             max="1" 
-             min="0" 
-             step="0.01"
-             onChange={ this.props.handleTimeChange }
-           />   
-          <div className="total-time">{this.props.formatTime(this.props.duration)}</div> 
-        </section>
-        <section id='volume-control'>
-          <div className='icon ion-volume-low'></div>
-          <input 
-            type='range' 
-            className='seek-bar'
-            value={ this.props.volume }
-            max='1'
-            min='0'
-            step='0.01'
-            onChange={ this.props.handleVolumeChange }
-          />
-          <div className='icon ion-volume-high'></div>
-        </section>
-      </section>
+      <div container className='player-controls'>
+        <Grid container centered>
+          <Grid.Row columns={3} className='player-bar' verticalAlign='middle'>
+          {/* Track time and slider for song seeking */}
+            <Grid.Column mobile={14} tablet={7} computer={5} id='time-control' className='sliders player-col'>
+              <Segment basic>
+                <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
+                <input 
+                  type="range" 
+                  className="seek-bar" 
+                  value={(this.props.currentTime / this.props.duration) || 0} 
+                  max="1" 
+                  min="0" 
+                  step="0.01"
+                  onChange={ this.props.handleTimeChange }
+                />
+                <span className="total-time">{this.props.formatTime(this.props.duration)}</span> 
+              </Segment>
+            </Grid.Column>
+          {/* Song information and button section */}
+            <Grid.Column mobile={14} tablet={7} computer={6} id='buttons' textAlign='center' className='player-col player-buttons'>
+              <Segment basic>
+                <button id='previous' onClick={ this.props.handlePreviousClick }>
+                  <span className='ion-ios-skipbackward-outline'></span>
+                </button>
+                <button id='play-pause' onClick={ this.props.handleSongClick }>
+                  <span className={ this.props.isPlaying ? 'ion-ios-pause-outline' : 'ion-ios-play-outline' }></span>
+                </button>
+                <button id='next' onClick={ this.props.handleNextClick }>
+                  <span className='ion-ios-skipforward-outline'></span>
+                </button>
+                <p className='player-song'>{ this.props.currentSong.title }</p>
+                <p className='player-other'>{ this.props.album.artist } - { this.props.album.title }</p>
+              </Segment>
+            </Grid.Column>
+          {/* Volume bar slider section */}
+            <Grid.Column mobile={14} tablet={7} computer={5} id='volume-control' className='sliders player-col'>
+              <Segment basic>
+                <span className='icon ion-volume-low'></span>
+                <input 
+                  type='range' 
+                  className='seek-bar'
+                  value={ this.props.volume }
+                  max='1'
+                  min='0'
+                  step='0.01'
+                  onChange={ this.props.handleVolumeChange }
+                />
+                <span className='icon ion-volume-high'></span>
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
     )
   }
 }

@@ -4,18 +4,20 @@ import './App.css';
 import Library from './components/Library';
 import Landing from './components/Landing';
 import Album from './components/Album';
+import { Menu } from "semantic-ui-react";
+
 
 class App extends Component {
   render() {
     return (
+      
       <div className='App'>
-        <header>
-          <nav>
-            <Link to='/'>Landing</Link>
-            <Link to='/library'>Library</Link>
-          </nav>
-          <h1>Bloc Jams</h1>
-        </header>
+        {/* Navigation bar sticky */}
+        <Menu fixed className='ui fixed top menu borderless' size='mini'>
+          <Menu.Item header><Link to='/'><img src={require('./data/images/bloc_jams_logo.png')} alt='bloc jams'/></Link></Menu.Item>
+          <Menu.Item name='library' position='right' id='library-link'><Link to='/library'>Library<span className='ion-headphone nav-icon'></span></Link></Menu.Item>
+        </Menu>
+        {/* React Router paths for components */}
         <main>
           <Route exact path='/' component={Landing} />
           <Route path='/library' component={Library} />
