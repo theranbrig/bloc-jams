@@ -20,7 +20,7 @@ Bloc Jams is a my first React SPA that was built as part of my curriculum throug
 
 ![Imgur](https://i.imgur.com/kP2hXnP.png?1)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/XnkFjDB" data-context="false"><a href="//imgur.com/XnkFjDB">Bloc Jams Screenshots</a></blockquote>
+> [More screenshots of my Bloc Jams build](https://imgur.com/a/XnkFjDB)
 
 ## Assignment Checkpoints and Build Steps
 
