@@ -18,9 +18,9 @@ class Library extends Component {
           <Grid centered className='grid-area'>
           {
             this.state.albums.map( (album, index) =>
-              <Grid.Column mobile={16} tablet={8} computer={4}>
+              <Grid.Column mobile={16} tablet={8} computer={4} key={index}>
                 <div className='library-item'>
-                  <Link to={`/album/${album.slug}`} key={index}>
+                  <Link to={`/album/${album.slug}`}>
                     <Image src={ album.albumCover } alt={ album.title } fluid className='lib-image'/>
                     <h3>{ album.title }</h3>
                     <h4>{ album.artist }</h4>

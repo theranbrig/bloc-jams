@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 import { Grid, Image, Table, Rating } from "semantic-ui-react";
@@ -121,11 +121,11 @@ class Album extends Component {
   render() {
     return (
         // Render Album Art
-        <Grid text-align='center' container centered className='grid-area album'>
+        <Grid text-align='center' centered className='grid-area album container'>
           <Grid.Row className='album-main-info'>
           <Grid.Column mobile={14} tablet={7} computer={7}>
             <section className='album-info'>
-              <Image id='album-info' src={ this.state.album.albumCover } alt={ this.state.album.title } size='large' fluid centered/>
+              <Image id='album-info' src={ this.state.album.albumCover } alt={ this.state.album.title } fluid centered/>
             </section>
           </Grid.Column>
         {/* Render song table */}

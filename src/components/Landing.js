@@ -15,7 +15,7 @@ const Landing = () => (
           <Grid.Column mobile={16} tablet={8} computer={5} className='point'>
             <div className='selling-point' color='violet'>
               <h2 className='point-title end-title'>Choose your music</h2>
-              <Image src={require('./../data/images/photo-1524623258233-5eb366d88882.jpeg')} className='landing-image' size='medium' fluid/>
+              <Image src={require('./../data/images/photo-1524623258233-5eb366d88882.jpeg')} className='landing-image' fluid/>
               <div>
                 <span className='ion-headphone landing-icon'></span>
               </div>
@@ -26,7 +26,7 @@ const Landing = () => (
           <Grid.Column mobile={16} tablet={8} computer={5} className='point'>
             <div className='selling-point' color='violet'>
               <h2 className='point-title'>Unlimited, streaming, ad-free</h2>
-              <Image src={require('./../data/images/cristian-guanipa-161134-unsplash.jpg')} className='landing-image' size='medium' fluid/>
+              <Image src={require('./../data/images/cristian-guanipa-161134-unsplash.jpg')} className='landing-image' fluid/>
               <div>
                 <span className='ion-wifi landing-icon'></span>
               </div>
@@ -37,7 +37,7 @@ const Landing = () => (
           <Grid.Column mobile={16} tablet={8} computer={5} className='point'>
             <div className='selling-point' color='violet'>
               <h2 className='point-title end-title'>Mobile enabled</h2>
-              <Image src={require('./../data/images/gabriel-barletta-87533-unsplash.jpg')} className='landing-image' size='medium' fluid/>
+              <Image src={require('./../data/images/gabriel-barletta-87533-unsplash.jpg')} className='landing-image' fluid/>
               <div>
                 <span className='ion-iphone landing-icon'></span>
               </div>

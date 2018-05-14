@@ -6,8 +6,8 @@ import { Grid, Segment } from "semantic-ui-react";
 class PlayerBar extends Component {
   render() {
     return (
-      <div container className='player-controls'>
-        <Grid container centered>
+      <div className='container player-controls'>
+        <Grid centered className='container'>
           <Grid.Row columns={3} className='player-bar' verticalAlign='middle'>
           {/* Track time and slider for song seeking */}
             <Grid.Column mobile={14} tablet={7} computer={5} id='time-control' className='sliders player-col'>
