@@ -13,7 +13,7 @@ class App extends Component {
         {/* Navigation bar sticky */}
         <Menu className='fixed top mini borderless'>
           <Menu.Item header><Link to='/'><img src={require('./data/images/bloc_jams_logo.png')} alt='bloc jams'/></Link></Menu.Item>
-          <Menu.Item name='library' position='right' id='library-link'><Link to='/library'>Library<span className='ion-headphone nav-icon'></span></Link></Menu.Item>
+          <Menu.Item name='library' position='right' id='library-link'><Link to='/library'>Library <i className="fas fa-headphones-alt"></i></Link></Menu.Item>
         </Menu>
         {/* React Router paths for components */}
         <main>

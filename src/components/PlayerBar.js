@@ -13,29 +13,29 @@ class PlayerBar extends Component {
             <Grid.Column mobile={14} tablet={7} computer={5} id='time-control' className='sliders player-col'>
               <Segment basic>
                 <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
-                <input 
-                  type="range" 
-                  className="seek-bar" 
-                  value={(this.props.currentTime / this.props.duration) || 0} 
-                  max="1" 
-                  min="0" 
+                <input
+                  type="range"
+                  className="seek-bar"
+                  value={(this.props.currentTime / this.props.duration) || 0}
+                  max="1"
+                  min="0"
                   step="0.01"
                   onChange={ this.props.handleTimeChange }
                 />
-                <span className="total-time">{this.props.formatTime(this.props.duration)}</span> 
+                <span className="total-time">{this.props.formatTime(this.props.duration)}</span>
               </Segment>
             </Grid.Column>
           {/* Song information and button section */}
             <Grid.Column mobile={14} tablet={7} computer={6} id='buttons' textAlign='center' className='player-col player-buttons'>
               <Segment basic>
                 <button id='previous' onClick={ this.props.handlePreviousClick }>
-                  <span className='ion-ios-skipbackward-outline'></span>
+                  <i className='fas fa-backward'></i>
                 </button>
                 <button id='play-pause' onClick={ this.props.handleSongClick }>
-                  <span className={ this.props.isPlaying ? 'ion-ios-pause-outline' : 'ion-ios-play-outline' }></span>
+                  <i className={ this.props.isPlaying ? 'fas fa-pause' : 'fas fa-play' }></i>
                 </button>
                 <button id='next' onClick={ this.props.handleNextClick }>
-                  <span className='ion-ios-skipforward-outline'></span>
+                  <i className='fas fa-forward'></i>
                 </button>
                 <p className='player-song'>{ this.props.currentSong.title }</p>
                 <p className='player-other'>{ this.props.album.artist } - { this.props.album.title }</p>
@@ -44,9 +44,9 @@ class PlayerBar extends Component {
           {/* Volume bar slider section */}
             <Grid.Column mobile={14} tablet={7} computer={5} id='volume-control' className='sliders player-col'>
               <Segment basic>
-                <span className='icon ion-volume-low'></span>
-                <input 
-                  type='range' 
+                <i className="fas fa-volume-down"></i>
+                <input
+                  type='range'
                   className='seek-bar'
                   value={ this.props.volume }
                   max='1'
@@ -54,7 +54,7 @@ class PlayerBar extends Component {
                   step='0.01'
                   onChange={ this.props.handleVolumeChange }
                 />
-                <span className='icon ion-volume-high'></span>
+                <i className="fas fa-volume-up"></i>
               </Segment>
             </Grid.Column>
           </Grid.Row>

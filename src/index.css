@@ -1,179 +1,180 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(./data/images/blur_bg_3.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./data/images/blur_bg_3.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Navbar Styling */
 
 #library-link a {
-    font-size: 2em;
-    letter-spacing: 0.1em;
-    text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
 .nav-link,
 #library-link a {
-    color: #E7ECEF;
-    font-family: 'Open Sans Condensed', sans-serif;
+  color: #E7ECEF;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .nav-icon {
-    color: #E7ECEF;
-    font-size: 1em;
-    padding: 0px 10px;
+  color: #E7ECEF;
+  font-size: 1em;
+  padding: 0px 10px;
 }
 
 .ui.mini.ui.fixed.top.menu.menu {
-    background-image: linear-gradient(to left top, #746381, #715e85, #6d5989, #68548d, #625092);
-    letter-spacing: 0.15em;
-    border-bottom: 1px solid #E7ECEF;
+  background-image: linear-gradient(to left top, #746381, #715e85, #6d5989, #68548d, #625092);
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid #E7ECEF;
 }
 
 .ui.menu img {
-    height: 50px;
-    margin: -5px;
+  height: 50px;
+  margin: -5px;
 }
 
 /* Landing Page Display Styling */
 
 .main-title {
-    height: 450px;
-    background-image: url(./data/images/1134.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #E7ECEF;
-    text-shadow: #274C77 2px 2px;
+  height: 450px;
+  background-image: url(./data/images/1134.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #E7ECEF;
+  text-shadow: #274C77 2px 2px;
 }
 
 .main-title h2 {
-    font-size: 3em;
-    padding: 125px 5% 0 5%;
-    letter-spacing: 0.2em;
+  font-size: 3em;
+  padding: 125px 5% 0 5%;
+  letter-spacing: 0.2em;
 }
 
 .main-title h2 {
-    font-size: 3.5em;
+  font-size: 3.5em;
 }
 
 .point-description,
 .point-title,
 .main-title h2 {
-    color: #E7ECEF;
-    font-family: 'Open Sans Condensed', sans-serif;
+  color: #E7ECEF;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .point {
-    padding: 10px 3% 20px 3%
+  padding: 10px 3% 20px 3%
 }
 
 .landing-image {
-    margin: 10px auto 10px;
+  margin: 10px auto 10px;
 }
 
 .landing-icon {
-    font-size: 2.5em;
-    color: #A3CEF1;
-    text-shadow: #274c77 1px 1px;
-    border-right: none;
+  font-size: 2.5em;
+  color: #A3CEF1;
+  text-shadow: #274c77 1px 1px;
+  border-right: none;
+  margin: 0 0 10px 0;
 }
 
 .point-title {
-    font-size: 1.3em;
-    letter-spacing: 0.1em;
-    height: 60px;
-    vertical-align: middle;
-    font-family: 'Rock Salt', sans-serif;
-    padding-top: 10px;
-    text-shadow: #274c77 1px 1px;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  height: 60px;
+  vertical-align: middle;
+  font-family: 'Rock Salt', sans-serif;
+  padding-top: 10px;
+  text-shadow: #274c77 1px 1px;
 }
 
 .point-description {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .ui.menu img {
-    height: 50px;
-    padding: -5px;
+  height: 50px;
+  padding: -5px;
 }
 
 .end-title {
-    line-height: 60px;
+  line-height: 60px;
 }
 
 .ui.grid-area {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .library-item a {
-    background: transparent;
-    color: #E7ECEF;
-    text-align: center;
+  background: transparent;
+  color: #E7ECEF;
+  text-align: center;
 }
 
 .ui.card {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 img {
-    padding: 5px 10px 0;
+  padding: 5px 10px 0;
 }
 
 /* Library Styling */
 
 .library-item h3 {
-    font-size: 1.5em;
-    letter-spacing: 0.04em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin-top: 5px;
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 5px;
 }
 
 .library-item h4 {
-    font-size: 1.2em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 0.05em;
-    margin-top: -14px;
+  font-size: 1.2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.05em;
+  margin-top: -14px;
 }
 
 .library-item p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin-top: -15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: -15px;
 }
 
 /* Image Hover - not affected on mobile */
 
 .ui.fluid.image:hover {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05) ease-in-out;
-    transition: transform 0.8s ease-in-out;
-    -webkit-transition: transform 0.8s ease-in-out;
-    -moz-transition: transform 0.8s ease-in-out;
-    -ms-transition: transform 0.8s ease-in-out;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05) ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: transform 0.8s ease-in-out;
+  -moz-transition: transform 0.8s ease-in-out;
+  -ms-transition: transform 0.8s ease-in-out;
 }
 
 .ui.fluid.image {
-    -moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0) ease-in-out;
-    transition: transform 0.8s ease-in-out;
-    -webkit-transition: transform 0.8s ease-out;
-    -moz-transition: transform 0.8s ease-out;
-    -ms-transition: transform 0.8s ease-out;
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0) ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: transform 0.8s ease-out;
+  -moz-transition: transform 0.8s ease-out;
+  -ms-transition: transform 0.8s ease-out;
 }
 
 /* Album and Player Bar Styling */
@@ -181,81 +182,81 @@ img {
 /* Track List Styling */
 
 .ui.grid.album {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 .album,
 .ui.table,
 .ui.table thead th {
-    color: #E7ECEF;
+  color: #E7ECEF;
 }
 
 .ui.table {
-    font-size: 1.2em;
-    overflow-x: scroll;
+  font-size: 1.2em;
+  overflow-x: scroll;
 }
 
 #song-list {
-    padding: 30px 0 15px 0 !important;
+  padding: 30px 0 15px 0 !important;
 }
 
 table {
-    letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 }
 
 #release-info {
-    margin-bottom: 200px !important;
+  margin-bottom: 200px !important;
 }
 
 /* Table button styling */
 
-tr:hover .ion-play {
-    display: block;
+tr:hover .fa-play {
+  display: block;
 }
 
-tr .ion-play,
+tr .fa-play,
 tr:hover .song-number {
-    display: none;
+  display: none;
 }
 
 .song-button {
-    border-radius: 100%;
+  border-radius: 100%;
 }
 
 .song-button {
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    line-height: 30px;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  line-height: 30px;
 }
 
 .song-button:hover {
-    color: #A3CEF1;
+  color: #A3CEF1;
 }
 
 #buttons button {
-    background-color: transparent;
-    height: 40px;
-    width: 40px;
-    margin-top: 20px;
-    border-radius: 50%;
-    margin: 5px;
-    font-size: 25px;
-    line-height: 25px;
-    padding-top: 3px;
-    border: 2px solid #E7ECEF;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  padding-top: 3px;
+  border: 2px solid #E7ECEF;
 }
 
 #buttons button:hover {
-    border: 2px solid #A3CEF1;
+  border: 2px solid #A3CEF1;
 }
 
 .ui.rating .active.icon {
-    color: white;
+  color: white;
 }
 
 div .ui.segment {
-    padding: 0;
+  padding: 0;
 }
 
 /* Album info Styling */
@@ -264,100 +265,113 @@ div .ui.segment {
 .album-main-info h1,
 .album-main-info h2,
 .player-controls {
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .album-main-info h1 {
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    margin-bottom: -15px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: -15px;
 }
 
 .album-main-info h2 {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
 }
 
 /* Player bar styling */
 
 .ui.ui.segment {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .player-song {
-    margin-bottom: -3px;
-    font-size: 1.2em;
-    letter-spacing: 0.15em;
+  margin-bottom: -3px;
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
 }
 
 .player-other {
-    font-size: 1.1.em;
-    letter-spacing: 0.08em;
-    padding-bottom: 5px;
+  font-size: 1.1.em;
+  letter-spacing: 0.08em;
+  padding-bottom: 5px;
 }
 
 .player-controls p {
-    padding: 2px 0px;
+  padding: 2px 0px;
 }
 
 .player-buttons {
-    padding: 15px 0;
+  padding: 4px 0;
+}
+
+.player-buttons i {
+  font-size: 0.8em;
+  padding: 0 0 4px 2px;
+}
+
+button#previous {
+  padding: 0 4px 2px 0;
+}
+
+button#play-pause {
+    padding: 0 1px 0 0;
 }
 
 .player-controls {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(45, 45, 45, 0.9);
-    color: #E7ECEF;
-    padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(45, 45, 45, 0.9);
+  color: #E7ECEF;
+  padding: 20px 0;
 }
 
 /* Volume and Time Position slider styling */
 
 .seek-bar {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    background: #E7ECEF;
-    outline: none;
-    opacity: 0.85;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin: 0px 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #E7ECEF;
+  outline: none;
+  opacity: 0.85;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: 0px 10px;
 }
 
 .seek-bar:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .seek-bar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: #A3CEF1;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #A3CEF1;
+  cursor: pointer;
 }
 
 .seek-bar::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    background: #A3CEF1;
-    cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: #A3CEF1;
+  cursor: pointer;
 }
 
 input[type=range] {
-    width: 100%;
+  width: 100%;
 }
 
 #buttons {
-    display: block;
+  display: block;
 }
 
 .sliders>.ui.segment {
-    display: inline-flex;
-    padding: -3px;
+  display: inline-flex;
+  padding: -3px;
 }

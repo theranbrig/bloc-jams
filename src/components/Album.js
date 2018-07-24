@@ -25,7 +25,7 @@ class Album extends Component {
   }
 
   // Audio playback methods
-  
+
   setSong(song) {
     this.audioElement.src = song.audioSrc;
     this.setState({ currentSong: song });
@@ -49,7 +49,7 @@ class Album extends Component {
     this.audioElement.removeEventListener('timeupdate', this.eventListeners.timeupdate);
     this.audioElement.removeEventListener('durationChange', this.eventListeners.durationchange)
   }
-  
+
   // Play and pause function.
   play() {
     this.audioElement.play();
@@ -104,7 +104,7 @@ class Album extends Component {
     const minutes = Math.floor(roundedSeconds / 60);
     const seconds = roundedSeconds % 60;
     let string = minutes + ':';
-    if (seconds < 10) { 
+    if (seconds < 10) {
       string += '0';
     }
     string += seconds;
@@ -116,7 +116,7 @@ class Album extends Component {
     return this.state.isPlaying && song === this.state.currentSong && this.state.currentTime !== this.state.duration;
   }
 
-  
+
   // Render album, tracks, and player bar
   render() {
     return (
@@ -139,7 +139,7 @@ class Album extends Component {
             <colgroup>
               <col id='song-number-column' />
               <col id='song-title-column' />
-              <col id='song-duration-column' /> 
+              <col id='song-duration-column' />
             </colgroup>
             <Table.Header>
               <Table.Row>
@@ -151,21 +151,21 @@ class Album extends Component {
           {/* Song information mapping */}
             <Table.Body>
               {
-                this.state.album.songs.map( (song, index) => 
+                this.state.album.songs.map( (song, index) =>
                   <Table.Row className='song' key={index} onClick={ () => this.handleSongClick(song) }>
                     <Table.Cell className='song-actions' textAlign='center'>
                       <button className='song-button'>
                         <span className='song-number'>{
-                            (this.songState(song)) 
-                            || (!this.state.isPlaying 
-                            && song === this.state.currentSong 
-                            && this.state.currentTIme > 0) 
-                            ? (!this.state.isPlaying ? <span className='ion-play'></span> : '') 
-                            : index + 1 
+                            (this.songState(song))
+                            || (!this.state.isPlaying
+                            && song === this.state.currentSong
+                            && this.state.currentTIme > 0)
+                            ? (!this.state.isPlaying ? <i className='fas fa-play'></i> : '')
+                            : index + 1
                           }
                         </span>
-                        <span className={(this.songState(song)) ? '' : 'ion-play'}></span>
-                        <span className={(this.songState(song)) ? 'ion-pause' : ''}></span>
+                        <i className={(this.songState(song)) ? '' : 'fas fa-play'}></i>
+                        <i className={(this.songState(song)) ? 'fas fa-pause' : ''}></i>
                       </button>
                     </Table.Cell>
                     <Table.Cell className='song-title'>{ song.title }</Table.Cell>
@@ -173,7 +173,7 @@ class Album extends Component {
                   </Table.Row>
                 )
               }
-              
+
             </Table.Body>
           </Table>
           <div id='release-info'>{ this.state.album.releaseInfo } - {this.state.album.releaseDate }</div>
@@ -181,8 +181,8 @@ class Album extends Component {
         {/* Render player bar */}
           </Grid.Row>
           <Grid.Row mobile={16} tablet={14} computer={14}>
-            <PlayerBar 
-              isPlaying={ this.state.isPlaying } 
+            <PlayerBar
+              isPlaying={ this.state.isPlaying }
               currentSong={ this.state.currentSong }
               volume={ this.state.volume }
               album={ this.state.album }
@@ -196,7 +196,7 @@ class Album extends Component {
               formatTime={ (e) => this.formatTime(e) }
             />
           </Grid.Row>
-        </Grid> 
+        </Grid>
     )
   }
 }
