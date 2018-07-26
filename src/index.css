@@ -221,6 +221,7 @@ tr:hover .song-number {
 
 .song-button {
   border-radius: 100%;
+  border: 2px #E7ECEF solid;
 }
 
 .song-button {
@@ -228,6 +229,10 @@ tr:hover .song-number {
   width: 35px;
   background-color: transparent;
   line-height: 30px;
+}
+
+button.song-button {
+  padding: 0px 2px 0 0;
 }
 
 .song-button:hover {
@@ -315,7 +320,11 @@ button#previous {
 }
 
 button#play-pause {
-    padding: 0 1px 0 0;
+  padding: 2px 1px 1px 0;
+}
+
+button#next {
+  padding: 0 1px 0px 0;
 }
 
 .player-controls {

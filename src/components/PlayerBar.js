@@ -4,6 +4,7 @@ import { Grid, Segment } from "semantic-ui-react";
 // Build of player bar for album page to be placed at the bottom of the screen
 
 class PlayerBar extends Component {
+
   render() {
     return (
       <div className='container player-controls'>
